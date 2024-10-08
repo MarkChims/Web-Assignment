@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Shopping
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <i id="logo"></i>
+        <div id="header-contain">
+            <ul id="header-list">
+                <li><a href="/"><i class="fa fa-shopping-cart"></i>Buy</a></li>
+                <li><a href="/"><i class="fa fa-shopping-bag"></i>Sell</a></li>
+                <li><a href="/"><i class="fa fa-address-card"></i>About</a></li>
+                <li><a href="/"><i class="fa fa-info-circle"></i></i>More </a></li>
+                <li><a href="/"><i class="fa fa-comment"></i>Contact </a></li>
+                <li><a href="/"><i class="fa fa-bars" ></i> Help Desk</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="main-area">
+        <div id = "side-bar">
+            <ul id = "side-list">
+                <li><a href="{% url "Home:Home" %}">Phones and Accesories</a></li>
+                <li> <a href="#">Computer and Accesories</a></li>
+                <li><a href="#">Consumer Electronics</a></li>
+                <li><a href="#"> Women's Clothing</a></li>
+            </ul>
+        </div>
+
+        <section id="section-part">
+            {% block content %}
+            
+            {% endblock %}
+        </section>
+        
+    </div>
+
+    <footer id="footer"> 
+        <ul class= "first-bottom">
+            <li><a href="#"><h3>Buy</h3></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Contact</a></li>
+           <li><a href="#"><h3>Sell</a></h3></li>
+            </ul>
+    
+            <ul class= "first-bottom">
+                <li><a href="#"><h3>About</a></h3></li>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Likes</a></li>
+                </ul>
+    
+             <ul class= "first-bottom">
+                <li><a href="#"><h3>More</a></h3></li>
+                 <li><a href="#">FAQS</a></li>
+                  <li><a href="#">Carriers</a></li>
+                <li><a href="#">Reviews</a></li>
+             </ul>
+
+             <div id = "list-icons">
+                <a href = "#"><h3>FOLLOW US</h3></a>
+                <ul>
+                    <a href = "#"><i class="fa fa-facebook"></i></a>
+                    <a href = "#"><i class="fa fa-twitter"></i></a>
+                    <a href = "#"><i class="fa fa-instagram"></i></a>
+                    <a href = "#"> <i class="fa fa-youtube"></i></a>
+                    <a href = "#"><i class="fa fa-linkedin"></i></a>
+                    <a href = "#"><i class="fa fa-envelope"></i></a> 
+                </ul>
+                <a href = "#"><h3>REVIEW US</h3></a>
+                <ul>
+                    <a href = "#"><i class="fa fa-facebook"></i></a>
+                    <a href = "#"><i class="fa fa-twitter"></i></a>
+                </ul>
+             </div>
+            
+             <hr>
+             <h2 id="copy">Copyright &copy; 2024</h2>
+
+    </footer>
+
+</body>
+</html>

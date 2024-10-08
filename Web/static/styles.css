@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: gray;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #000064;
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+    display: block;
+    background: url(./images/genius.png);
+    width: 100px;
+    height: 99px;
+    float: left;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+#header-contain {
+    width: 1000px;
+    height: 100px;
+    margin-left: 150px;
+    color: white;
+}
+
+#header-list {
+    list-style: none;
+    font-size: 25px;
+    color: white;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header-list a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#header-list a:hover {
+    color: grey;
+}
+
+
+#header-list i {
+    margin-right: 10px;
+}
+
+#header-list li {
+    height: 100%;
+    min-width: 202px;
+}
+
+#header-list li:hover {
+    background-color: blue;
+    border-bottom-style: solid;
+    border-width: 5px;
+    color: black;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+#main-area {
+    width: 100%;
+    min-height: 760px;
+    max-height: 760px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    text-align: center;
+    align-items: flex-start;
+}
+
+#side-bar {
+    min-width: 250px;
+    align-self: stretch;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+#side-bar a {
+    text-decoration: none;
+    margin-top: 15px;
+    color: white;
+}
+
+#side-list li a:hover {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#side-bar li {
+    margin-top: 15px;
+}
+
+#section-part {
+    flex-grow: 1;
+    background-color: gray;
+    max-height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #000064;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-bottom {
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px 10px;
+    font-size: 25px;
+}
+
+.first-bottom li {
+    list-style: none;
+    color: antiquewhite;
+    margin-bottom: 15px;
+}
+
+.first-bottom a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+hr {
+    width: 99%;
+    height: 0.5px;
+    border: 1px solid white;
+    margin-bottom: 2px;
+}
+
+#copy {
+    margin-left: 550px;
+}
+
+#list-icons a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#list-icons {
+    margin-top: 10px;
+}
+
+#list-icons ul {
+    margin-bottom: 10px;
+}
+
+#footer a:hover {
+    font-size: 30px;
+    color: grey;
+}
+
+#display-content {
+    width: 300px;
+    height: 300px;
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    transition: transform 2s;
+}
+
+#display-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+}
+
+#section-part h1 {
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+
+#display-content img {
+    border-radius: 10px 10px 0 0;
+    height: 80%;
+    width: 100%;
+}
+
+#display-content h1 {
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+#display-content p {
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+}

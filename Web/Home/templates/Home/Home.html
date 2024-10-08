@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+ HomePage 
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome To the Our Home Page</h1>
+
+        
+    {% for good in goods %}
+        <div id="display-content">
+            <img class = "banner" src="{{ good.banner.url }}" alt="{{ good.title }}">
+            <h1> {{ good.title }} </h1>
+            <p> {{ good.price }} </p>
+        </div>
+    {% endfor %}
+       
+    
+{% endblock %}
